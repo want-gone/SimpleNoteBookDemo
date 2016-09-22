@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#c0c0c0"
+    tools:context="com.example.mynotebook.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_image"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/btn_edit"
+        android:layout_toRightOf="@+id/iv_image"
+        android:gravity="center"
+        android:text="风行记事"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:onClick="click"
+        android:text="编辑" />
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/image" />
+    <Button 
+        android:id="@+id/btn_add"
+        android:text="添加日记"
+        android:onClick="click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+    <ListView
+        android:id="@+id/lv_show_notes"
+        android:layout_above="@id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_image" >
+    </ListView>
+</RelativeLayout>
