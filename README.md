@@ -1,0 +1,2 @@
+# SimpleNoteBookDemo
+结合Sqlite和ListView实现的一个简单的记事本功能
